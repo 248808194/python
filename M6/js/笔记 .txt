@@ -1,0 +1,159 @@
+js 变量
+
+声明变量
+name = 'zhoutao'     全局变量
+var name = 'zhoutao' 局部变量
+
+定时器:
+set
+
+数据类型
+    数字:
+        a = 18
+        a = '18'
+        b = parseint(a) #字符串转换为数字 parsefloat字符串转换为浮点
+
+    字符串:
+        a = 'zhoutao'
+        a.chartat(索引位置)
+        a.substring(起始位置,结束位置)
+        a.lenght (获取当前字符串长度)
+
+    列表/数组功能和python类似 主要是splice:
+        定义一个列表 a=  [1,2,3,4,5]
+            a.length计算列表大小
+            a.pop()获取并移除最后一个元素
+            a.unshift(0) 头部插入一个元素
+            a.shift() 头部移除一个元素
+        a.splice(start,deletecount,value) 插入删除替换数组的元素,第一个是起始未知,第二个是删除位置,第三个是值
+                    a=[1,2,3,4,5]
+                    (5) [1, 2, 3, 4, 5]
+                    a.splice(1,0,22) #指定位置插入22 ,定义从1开始 不删除
+                    a的值为  [1, 22, 2, 3, 4, 5]
+
+
+                    a.splice(1,1,222) 指定位置替换一个值 #将第二个值替换为222
+                        [22]
+                        a
+                        (6) [1, 222, 2, 3, 4, 5]
+
+
+                    a
+                        (4) [999, 111, 222, 5]
+                        a.splice(0,1) #删除一个值
+                        [999]
+                        a
+                        (3) [111, 222, 5]
+
+
+    字典:
+            a = {'k1':'v1','k2':'v2'} 和python类似没什么
+
+
+
+    布尔类型:
+        true false 必须小写
+
+
+
+        for循环
+        js中有2种for循环
+
+        第一种循环
+                循环时循环的元素是索引
+               a = [11,22,33,44,55] 列表
+           for (var item in a) { console.log(item);}
+                    VM873:1 0
+                    VM873:1 1
+                    VM873:1 2
+                    VM873:1 3
+                    VM873:1 4
+                    undefined
+           for (var item in a) { console.log(a[item]);}
+                    VM878:1 11
+                    VM878:1 22
+                    VM878:1 33
+                    VM878:1 44
+                    VM878:1 55
+
+            字典: a = {'k1':'v1','k2':'v2'}
+            for (var item in a) { console.log(a[item]);}
+                VM884:1 v1
+                VM884:1 v2
+
+
+            for (var item in a) { console.log(item);}
+                VM886:1 k1
+                VM886:1 k2
+
+        第二种循环 此种不支持字典循环
+            for (var i=0;i<a.length;i=i+1){console.log(i)}
+                VM935:1 0
+                VM935:1 1
+                VM935:1 2
+                VM935:1 3
+                VM935:1 4
+
+            for (var i=0;i<a.length;i=i+1){console.log(a[i])}
+                VM945:1 11
+                VM945:1 22
+                VM945:1 33
+                VM945:1 44
+                VM945:1 55
+
+
+
+
+js条件判断
+
+        if (condition) {
+
+        }else if (condition){
+        }else if (condition){
+        }else{
+
+        }
+
+        == 值相等
+        === 值和类型都相等
+        && and
+        || or
+
+
+        example:
+        function doInitSet(){
+	if(counts%3==0){
+		$(".wxcode").html("加微投资牛人微信：13637122480");
+		$(".wximg").attr("src","images/13637122480.png");
+	}
+	else {
+		$(".wxcode").html("加微投资牛人微信：13637122480");
+		$(".wximg").attr("src","images/13637122480.png");
+	}
+}
+
+
+#switch 用法
+
+name='zhourui'
+switch(name){
+    case "zhoutao":
+      var  age = 30;
+        break;
+    case "zhourui":
+       var age=7;
+        break;
+    case "sara":
+       var age = 35;
+        break;
+    default:
+       var	age = 18;
+
+           }
+
+age
+    7
+
+
+
+js函数定义

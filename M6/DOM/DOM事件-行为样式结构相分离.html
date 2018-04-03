@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行为样式结构相分离</title>
+</head>
+
+<style>
+    #s1 {
+        background-color: red;
+    }
+</style>
+<body>
+
+<div id ='s1'>
+123
+</div>
+
+
+<script>
+    var mydiv = document.getElementById('s1');
+    mydiv.onclick =function () {
+        console.log('行为样式结构相分离')
+    }
+</script>
+
+</body>
+</html>

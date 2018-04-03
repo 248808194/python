@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta http-equiv="refresh" Content="999999999;url=http://www.baidu.com" />
+    <meta name="keywords" content=" 关键字1,关键字2,关键字3" >
+    <meta name="description" content="网页描述信息">
+    <title>input select form 　</title>
+    <link rel="icon" href="http://www.baidu.com/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<form enctype="multipart/form-data" action="http://localhost:8888/index" method="get">
+    <!--enctype 属性规定在发送到服务器之前应该如何对表单数据进行编码
+     multipart/form-data 不对字符进行编码,在使用包含文件上传空间的表单,必须使用该值
+     -->
+
+    <div>
+        username: <input type="text" placeholder="用户名/手机/邮箱" name="username">
+        <br>
+        password: <input type="password" placeholder="密码" name="password">
+    </div>
+    <div>
+        <P>选择性别</P>
+        男性:<input type="radio" name="gender" value="1" checked="checked">
+        女性:<input type="radio" name="gender" value="2" >
+        <!--提交的时候如果是男性则gender＝１　checked＝checked为默认选择　-->
+        <p>选择爱好</p>
+        篮球: <input type="checkbox" name="favor" value="1" checked="checked" >
+        排球: <input type="checkbox" name="favor" value="2" >
+        足球: <input type="checkbox" name="favor" value="3" >
+        台球: <input type="checkbox" name="favor" value="4" >
+        <p>技能</p>
+        系统管理: <input type="checkbox" name="skill" value="1" checked="checked">
+        写代码: <input type="checkbox" name="skill" value="2">
+
+        <p>上传文件</p>
+        <input type="file" value="filename" >
+        <br>
+        最大250字: <textarea name="texts" maxlength="250" ></textarea>
+
+    </div>
+    <p>select下拉框</p>
+
+        <select name="city" size="1">
+            <option value="1" selected="selected">北京</option>
+            <option value="2" >上海</option>
+            <option value="3" >南京</option>
+            <option value="4" >广州</option>
+            <option value="5" >深圳</option>
+        </select>
+        <p>多选下拉框</p>
+        <select name="citys" size="7" multiple="multiple">
+            <option value="1" >北京</option>
+            <option value="2" >上海</option>
+            <option value="3" >南京</option>
+            <option value="4" >广州</option>
+            <option value="5" >深圳</option>
+        </select>
+        <p>下拉框分组</p>
+        <select name="cc" size="7">
+            <optgroup label="江苏"/>
+                <option value="1"> 南通</option>
+                <option value="2"> 无锡</option>
+                <option value="3"> 苏州</option>
+                <option value="4"> 常州</option>
+            <optgroup label="浙江"/>
+                <option value="1"> 金华</option>
+                <option value="2"> 宁波</option>
+                <option value="3"> 杭州</option>
+                <option value="4"> 温州</option>
+
+        </select>
+
+
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+
+</form>
+
+</body>
+</html>

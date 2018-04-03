@@ -1,0 +1,177 @@
+
+* {  margin: 0;padding: 0  }
+
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    line-height: 22px;
+    color: #555;
+    background: #f4f4f4;
+}
+
+a {
+    color: #353535;
+    text-decoration: none;
+}
+
+a:link {
+    color: #353535;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
+
+a:visited {
+    color: #353535;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #013155;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
+
+a:active {
+    color: #353535;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+form {
+    display: inline;
+}
+
+input {
+    font-family: Tahoma, Arial;
+    font-size: 12px;
+    padding: 2px;
+}
+
+input.text {
+    height: 16px;
+    padding: 1px;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+    background-color: #F9F9F9;
+}
+
+input.button {
+    height: 20px;
+    color: #000000;
+    border: 1px solid #999999;
+    border-top: 1px solid #CCCCCC;
+    border-left: 4px solid #CCCCCC;
+    background: #FFFFFF;
+}
+
+textarea {
+    font-family: Tahoma, Arial;
+    color: #000000;
+    height: 100px;
+    width: 200px;
+}
+
+
+#midder {
+    clear: both;
+    overflow: auto;
+}
+
+#midder,
+#footer {
+    padding: 0px 15px;
+}
+
+#header {
+    margin-bottom: 3px;
+    background: #71B1F1;
+    height: 46px;
+}
+
+.headertop {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-left: -10px;
+    padding-right: 5px;
+}
+
+
+.menu {
+    float: left;
+    height: 37px;
+}
+
+.menu li {
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.menu a li {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.menu li:hover,
+.menu .active {
+    background: #fffFFF;
+    color: #71B1F1;
+}
+
+.searchbox {
+    float: right;
+    width: 280px;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.searchbox .ipt {
+    float: left;
+    border-top: 1px solid #5C9FED;
+    border-left: 1px solid #5C9FED;
+    border-bottom: 1px solid #5C9FED;
+    border-right: 0px;
+    font-size: 12px;
+    height: 20px;
+    width: 130px;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.searchbox .bt2 {
+    float: left;
+    border-top: 1px solid #5C9FED;
+    border-right: 1px solid #5C9FED;
+    border-bottom: 1px solid #5C9FED;
+    border-left: none;
+    height: 26px;
+    width: 30px;
+    background: url(http://ttmeiju.com/Application/Home/View/Public/static/images/search.jpg) no-repeat #ffffff;
+    background-position: center;
+    cursor: pointer;
+}

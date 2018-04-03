@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pg-header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 48px;
+            background-color: dodgerblue;
+            line-height: 48px;
+        }
+
+        .pg-body {
+            margin-top: 48px;
+        }
+
+        .w {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+      .menu {
+            display: inline-block;
+            padding: 0 10px 0 10px;
+          /*
+          单独 padding 10px 上下左右都需要加10像素
+          padding 0 10px;上下是0 左右10 px
+          padding 上右下左
+          */
+            color: white;
+        }
+
+                .menu:hover{
+            background-color: red;
+                    /*当鼠标移动到当前标签上时，以下css属性才生效*/
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="pg-header">
+    <div class="w">
+        <a class="logo">LOGO</a>
+        <a class="menu">全部</a>
+        <a class="menu">42区</a>
+        <a class="menu">段子</a>
+        <a class="menu">1024</a>
+    </div>
+</div>
+<div class="pg-body">123</div>
+
+</body>
+</html>

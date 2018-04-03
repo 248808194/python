@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+html {
+    min-width: 776px;
+}
+
+body {
+    /*
+
+    */
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #000;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    /*整个body 都在中间*/
+    background-color: #2459a2;
+    font-family: '宋体','新宋体',arial, verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #e66133;
+}
+
+a.visited {
+    color: #e66133;
+}
+
+a:hover {
+    color: #637DBC; text-decoration: underline;
+}
+
+
+pre {
+
+    text-indent: 0;
+    background-color: #dddddd;
+    color: blue;
+
+}
+
+#top {
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    height: 12px;
+    background: url("bg_top1.gif") #fff repeat-x left top;overflow: hidden;
+}
+
+#top1 {
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    height: 121px;
+
+}
+
+
+#main {
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.2em 0px;
+    background: url("bg_dot1.gif") #fff repeat left top; text-align: left;
+    
+}
+
+#content {
+    width: 710px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:  1em;
+    background: #fff;
+
+}
+
+#title {
+    font-weight: bold;
+    margin: 0px 0px 0.5em 0px;
+    padding: 0.5em 0px 0.5em 1em;
+    font-size: 24px;
+    color: #00A06b;
+    text-align: left;
+    border-bottom: solid red 12px;
+
+}
+
+
+.sub {
+    color: #00A06B;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    padding: 1em 2em 0;
+    background: url("0.gif") no-repeat 1em 74% ;
+
+}
+
+.content {
+    text-indent: 2em;
+    font-size: 13px;
+    margin-left: 2em;
+    padding:  1em 6px;
+
+}
+
+#gotop {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    height:2em;
+    font-size: 12px;
+    text-align: right;
+}
+#footer {
+    clear: both;
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    background: url("bg_bottom.gif") #fff repeat left top;
+    text-align: center;
+    height: 39px;
+    color: #ddd;
+}
+
+#copyright {
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 0px  0px 0px;
+    background: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 13px;
+    font-size: 12px;
+    color: red;
+
+}
+
+#copyright a { color: #667EBE; }
+
+.box { background: url(nt.gif) repeat; }
+.tl { background: url(tl.gif) no-repeat top left; }
+.tr { background: url(tr.gif) no-repeat top right; }
+.bl { background: url(bl.gif) no-repeat bottom left; }
+.br { background: url(br.gif) no-repeat bottom right; }
+body,td,th { font-family: "宋体", "新宋体", arial, verdana, sans-serif; }

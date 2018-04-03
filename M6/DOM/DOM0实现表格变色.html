@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+
+</style>
+
+<body>
+
+<table border="2px" width="300px">
+
+    <thead>
+    <tr >
+        <th>1</th>
+        <th>1</th>
+        <th>1</th>
+        <th>1</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr onmouseover="f1(1)"  onmouseout="f2(1)">
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+
+        <tr onmouseover="f1(2)"  onmouseout="f2(2)">
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+
+        <tr onmouseover="f1(3)"  onmouseout="f2(3)">
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+    </tr>
+    </tbody>
+
+
+
+
+</table>
+
+<!--
+ onmouseover 鼠标放上去
+ onmouseout  鼠标移除
+
+ -->
+<script>
+    var mytrss = document.getElementsByTagName('tr');
+
+    for ( var i =0;i< mytrss.length;i++) {
+        mytrss[i].onmouseover = function () {
+            this.style.backgroundColor = 'red';
+        };
+
+        mytrss[i].onmouseout = function () {
+            this.style.backgroundColor = ''
+        };
+    }
+
+//    先将所有的tr拿到，然后循环tr 列表中的每一个元素，设置鼠标划过/鼠标移去的动作
+
+
+</script>
+
+<script>
+    function f1(n) {
+        var mytrs = document.getElementsByTagName('tr')[n];
+//        函数f1（n） 当执行f1(1) 的时候此时n = 1 mytrs为所有tr列表的第一个tr
+        mytrs.style.backgroundColor = 'blue';
+//        将第一个tr的背景色改成blue
+    }
+
+
+    function f2(n) {
+        var mytrs = document.getElementsByTagName('tr')[n];
+        mytrs.style.backgroundColor = '';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="i1" type="text" value="请输入关键字:" onfocus="Focus()" onblur="Blur()">
+
+<!--infocus 鼠标点进来-->
+<!--onblur 鼠标移除-->
+
+<script>
+    function Focus() {
+        var tag = document.getElementById('i1');
+        var val = tag.value;
+        if (val == '请输入关键字:') {
+            tag.value = '';
+        }
+
+    }
+//判断如果鼠标点进来如果值是原始值,就将值清空
+
+    function Blur() {
+        var tag = document.getElementById('i1');
+        var val = tag.value;
+        if (val.length ==0) {
+            tag.value = '请输入关键字:';
+        }
+    }
+//判断如果鼠标移除值=0 则将值赋值为原始值---->请输入关键字
+</script>
+
+</body>
+</html>

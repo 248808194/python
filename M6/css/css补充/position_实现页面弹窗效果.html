@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div style="z-index: 10;
+position: fixed;
+top: 50%;
+left: 50%;
+right: 50%;
+bottom: 50%;
+background-color: lemonchiffon;
+height: 400px;
+width: 500px;
+margin-left: -250px;
+margin-top: -200px">
+    <div>USERNAME:<input type="text"></div>
+    <div>PASSWORD:<input type="text"></div>
+    <div>EMAIL:<input type="text"></div>
+    <div>PHONE:<input type="text"></div>
+
+    <!-- z-index 堆叠顺序 值越大优先级越高-->
+
+</div>
+
+<div style="background-color: black ;position: fixed;z-index: 9;color: white;
+top: 5%;
+left: 5%;
+right: 5%;
+bottom: 5%;
+opacity: 0.6">中间灰色半透明层</div>
+
+<!--opactiy透明度-->
+
+<div style=" z-index:8;height: 5000px;background-color: red;position:fixed;top: 2.5%;left:2.5%;right: 2.5%;bottom: 2.5%">最低层</div>
+
+</body>
+</html>

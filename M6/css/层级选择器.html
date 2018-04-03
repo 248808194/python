@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--http://blog.csdn.net/yezis/article/details/43818167 参考网址 -->
+  <head>
+        <meta charset="utf-8" />
+        <title>CSS3选择器——2、层次选择器</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                width: 300px;
+                margin: 0 auto;
+            }
+            div{
+                margin: 5px;
+                padding: 5px;
+                border: 1px solid #ccc;
+            }
+
+            div div {
+                /*只要div上层还是div的就应用这个样式*/
+                background-color: red;
+            }
+                        body > div {
+                            /*子选择器 只要body下面是div的就应用这个样式*/
+                background-color: green;
+            }
+
+            body span {
+                background-color: black;
+            }
+
+            div span{
+                background-color: yellow;
+            }
+
+            .active + div {
+                /*在active 类下层的div 应用这个样式*/
+                background-color: lime;
+            }
+            .active ~ div {
+                /*将active后面所有同级别的div都应用上这个样式*/
+                background-color: dodgerblue;
+            }
+        </style>
+    </head>
+
+    <body>
+    <p>123123123</p>
+    <span>123</span>
+        <div>
+        <span>asdf </span>
+        </div>
+        <div class="active">2</div>
+        <div>3</div>
+        <div>4
+             <div>5</div>
+             <div>6</div>
+        </div>
+        <div>7
+             <div>8
+                  <div>9
+                       <div>10</div>
+                  </div>
+             </div>
+        </div>
+
+    </body>
+
+</html>

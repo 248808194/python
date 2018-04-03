@@ -1,0 +1,14 @@
+ubuntu test:
+  i: 192.168.1.1
+  port: 22
+
+
+
+server1:
+  ip: 192.168.10.10
+  port: 22
+
+
+centos web:
+  ip: 192.168.10.55
+  port: 22

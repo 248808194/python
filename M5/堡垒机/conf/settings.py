@@ -1,0 +1,1 @@
+ConnParams = 'mysql+pymysql://root:newbie@127.0.0.1/hostmanager?charset=utf8'

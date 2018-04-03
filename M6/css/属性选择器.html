@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        input[type='text'] {
+            width: 300px;
+            height: 200px;
+            background-color: #cccccc;
+        }
+
+        input[n='zt'] {
+            width: 100px;
+            height: 200px;
+            background-color: #2459a2;
+        }
+
+
+        .c1[n='zhoutao'] {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: black;
+        }
+
+        .n1[n='zhoutao'] {
+                        height: 200px;
+            background-color: blanchedalmond;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+1: <input type="text" >
+2: <input type="text" n="zt" >
+<div class="n1" n="zhoutao">asdf</div>
+<br>
+<div class="c1 n1 " n="zhoutao">123</div>
+
+
+
+</body>
+</html>

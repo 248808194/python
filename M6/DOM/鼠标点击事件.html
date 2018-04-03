@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<select name="" id="input">
+  <option value="1">1</option>
+  <option value="">2</option>
+  <option value="">3</option>
+  <option value="">4</option>
+  <option value="">5</option>
+</select>
+</body>
+<script>
+  document.getElementById("input").addEventListener("focus",function () {
+    console.log("focus");
+  });
+
+  document.getElementById("input").addEventListener("mousedown",function () {
+    console.log("mousedown");
+  });
+
+  document.getElementById("input").addEventListener("mouseup",function () {
+    console.log("mouseup");
+  });
+
+  document.getElementById("input").addEventListener("input",function () {
+    console.log("input");
+  });
+
+  document.getElementById("input").addEventListener("change",function () {
+    console.log("change");
+  });
+
+  document.getElementById("input").addEventListener("blur",function () {
+    console.log("blur");
+  });
+
+  document.getElementById("input").addEventListener("click",function () {
+    console.log("click");
+  });
+
+  document.getElementById("input").addEventListener("keydown",function () {
+    console.log("keydown");
+  });
+
+  document.getElementById("input").addEventListener("keyup",function () {
+    console.log("keyup");
+  });
+
+  document.getElementById("input").addEventListener("select",function () {
+    console.log("select");
+  });
+
+
+</script>
+</html>

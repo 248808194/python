@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="margin: 0 auto">
+
+
+<div id="123" style="color: red;font-size:30px;background-color: black;text-align: center;">
+    A小区 50平 220万------B小区 25平 300万---------C家园 60平 560万-----欢迎来店咨询详谈:电话189-6438-1759 |
+</div>
+
+<script>
+    function func() {
+        var tag = document.getElementById('123');
+        var content = tag.innerText;
+        var f = content.charAt(0);
+        var l = content.substring(1,content.length);
+        tag.innerText = l + f;
+    }
+
+    setInterval("func()",1)
+</script>
+
+
+
+</body>
+</html>

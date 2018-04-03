@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .topmenu{
+        background-color: black;
+        height: 100px;
+        width: 70%;
+        float: right;
+
+
+    }
+
+    .leftmenu {
+        width: 30%;
+        float: left;
+    }
+
+    .item  ,.header{
+        /*层级选择器,通过item 下面是header的找到并且应用上,样式不对items有效*/
+        background-color: red;
+        opacity:0.5;
+        color: lemonchiffon;
+    }
+
+    .context {
+        background-color: yellow;
+        color: black;
+    }
+
+    .hide {
+        display: none;
+    }
+
+</style>
+
+
+<body style="margin: 0 auto">
+
+
+<div class="topmenu"></div>
+
+
+
+<div  class="leftmenu" >
+
+    <div class="item">
+        <div id="i1" class="header" onclick="func('i1')">菜单1</div>
+
+        <div class="context ">
+            <div>内容1</div>
+            <div>内容1</div>
+            <div>内容1</div>
+            <div>内容1</div>
+            <div>内容1</div>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div id="i2" class="header" onclick="func('i2')">菜单2</div>
+
+        <div class="context hide">
+            <div>内容2</div>
+            <div>内容2</div>
+            <div>内容2</div>
+            <div>内容2</div>
+            <div>内容2</div>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div id="i3" class="header" onclick="func('i3')">菜单3</div>
+
+        <div class="context hide">
+            <div>内容3</div>
+            <div>内容3</div>
+            <div>内容3</div>
+            <div>内容3</div>
+            <div>内容3</div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div id="i4" class="header" onclick="func('i4')">菜单4</div>
+
+        <div class="context hide">
+            <div>内容4</div>
+            <div>内容4</div>
+            <div>内容4</div>
+            <div>内容4</div>
+            <div>内容4</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function func(nid) {
+
+        var current_header = document.getElementById(nid);
+        var item_list = current_header.parentElement.parentElement.children;
+        for (i=0;i< item_list.length;i++) {
+            item_list[i].children[1].classList.add('hide')
+        }
+
+
+        current_header.nextElementSibling.classList.remove('hide')
+    }
+//    鼠标电击运行函数,获取当前所在的div，通过 parentelement获取上层div下的所有子div
+//    循环将每一个子div下的子div统一加上hide参数使所有的div隐藏起来
+//    先将所有的div隐藏在将当前的div下的hide属性去掉
+
+
+</script>
+
+
+</body>
+
+</html>

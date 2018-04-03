@@ -1,0 +1,77 @@
+### 目录结构
+
+```
+simple_ftp/
+├── ftp_client                                      #ftp客户端目录
+│   ├── data                                        #ftp数据文件目录
+│   │   └── zhoutao
+│   │       ├── 1.txt
+│   │       ├── 2.txt
+│   │       └── test.txt
+│   ├── __init__.py
+│   └── socket_class.py                             #客户端ｓｏｃｋｅｔ连接文件
+├── ftp_server                                      #ftp服务器目录
+│   ├── mysocketserver.py                           ＃服务器主程序
+│   └── userdata                                    ＃服务器端主目录
+│       └── zhoutao
+│           ├── 1.txt
+│           ├── 2.txt
+│           └── test.txt
+├── __init__.py
+├── start_ftp_client.py　　　　                      ＃ｆｔｐ客户端启动文件
+└── start_ftp_server.py                             #　ｆｔｐ服务端启动文件
+
+```
+#执行流程
+```
+启动ｆｔｐ客户端文件，
+要求输入用户名
+检查是否在ｄａｔａ目录下存在用户名相同的目录
+如存在
+    可进行
+            １：上传
+            ２： 下载
+            ３：查看文件列表
+ 
+ Example:
+ login first
+username:zhoutao
+1 : download_file
+2 : upload_file
+3 : check_file_list
+enter your chose  1/2/3:2
+EXAMPLE: download test.txt / upload test.txt upload 1.txt
+{'action': 'upload', 'filename': '1.txt', 'username': 'zhoutao', 'filesize': 23}
+b'200'
+200
+1 : download_file
+2 : upload_file
+3 : check_file_list
+enter your chose  1/2/3:3
+2.txt
+test.txt
+1.txt
+test.img
+1 : download_file
+2 : upload_file
+3 : check_file_list
+enter your chose  1/2/3:1
+EXAMPLE: download test.txt / upload test.txt download 1.txt
+{'action': 'download', 'username': 'zhoutao', 'filesize': 23, 'filename': '1.txt'} <class 'str'>
+1 : download_file
+2 : upload_file
+3 : check_file_list
+
+1 : download_file
+2 : upload_file
+3 : check_file_list
+enter your chose  1/2/3:3
+2.txt
+test.txt
+1.txt
+test.img
+1 : download_file
+2 : upload_file
+3 : check_file_list
+
+```

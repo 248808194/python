@@ -1,0 +1,102 @@
+DOM 含义Document Object Model 文档对象模型
+
+
+    DOM
+        查找
+            直接查找
+
+                getElementByID
+                getElementbyXXXXXX
+            间接查找
+
+
+
+            obj = document.getElementById('i1') # 获取对象
+                 <div id=​"i1">​…​</div>​
+
+            obj.innerText # innerText获取的是文本
+                "google baidu"
+
+            obj.innerHTML # innerHTML获取的是全部内容
+                <a>goog<span>le</span></a>
+
+
+innerHTML 可以直接修改标签 # 加一个a标签
+                obj.innerHTML = '<a href="http://www.baidu.com">baidu</a>'
+
+
+        value:
+
+                obj = document.getElementById('i2')
+
+                obj.value
+                     "python"
+                obj.value='linux'
+                     "linux"
+
+
+         通过value 也可以对select 标签进行操作
+
+
+         obj.selectindex = 0
+         obj.selectindex = 1
+         obj.selectindex = 2
+
+
+
+
+
+
+
+        样式操作:
+        获取样式名,列表,添加删除样式
+                    classname
+                    classlist
+                    classlist.remove
+                    classlist.add
+                如果用classlist.remove classlist.add 移除或者添加样式的话,则class里面的具体样式也会移除,但用XXX.style.XXXX则会更精细化的样式操作
+                    obj.style.fontsize
+                    obj.style.color
+
+
+        属性操作:
+                attributes
+                getattribute
+                removeattribute
+
+        创建标签,添加到html中:
+
+
+
+        其他:
+            console.log() 打印日志
+
+            alert 弹窗
+
+            confirm (信息确认) true false
+
+            location.href 获取当前url
+            location.href = 'http://www.baidu.com/' 页面跳转
+            location.reload() 页面刷新
+            location.href = location.href 页面刷新
+
+
+            setinerval 定时器 一直执行
+            clearinterval 清除定时器
+
+            settimeout 定时器 只执行一次
+            cleartimeout 清除定时器
+
+
+
+
+        DOM事件:
+            onclick , onblur , onfocus,  onmouseover, onmouseout
+
+            行为   样式  结构  相分离的页面
+            js    css   html
+
+
+
+
+

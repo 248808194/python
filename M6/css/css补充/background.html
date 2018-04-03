@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="height: 100px"></div>
+<div style="background-image: url(icon_18_118.png);height: 100px">图片持续的堆叠</div>
+
+
+
+
+<div style="background-image: url(icon_18_118.png);height: 100px;background-repeat: no-repeat ;border: 1px solid red">图片不在堆叠</div>
+<!--加上 backgrand-repeat 表示图片不堆叠-->
+
+<div style="background-image: url(icon_18_118.png);height: 20px;width: 20px;background-repeat: no-repeat ;border: 1px solid red"></div>
+
+
+
+<div style="background-image: url(icon_18_118.png);height: 20px;width: 20px;background-repeat: no-repeat ;border: 1px solid red;
+background-position-x: 0px;
+background-position-y: 0px;
+"></div>
+
+
+<!--
+background-image 默认图片会重复的堆叠整个div
+background-repeat 图片是否堆叠
+background-postion-x x轴方向移动图片
+background-postion-y y轴方向移动图片
+
+xy 可以这样写
+background-postion 10px 10px 分别表示x,y 轴
+
+-->
+
+</body>
+</html>

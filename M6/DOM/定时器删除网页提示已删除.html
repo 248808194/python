@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="status">未删除</div>
+<input type="button" value="未删除" onclick="deleteEle()">
+
+
+<script>
+function deleteEle() {
+    document.getElementById('status').innerText ='已删除';
+    setTimeout(function () {
+        document.getElementById('status').innerText = 'exsits';
+
+    },2000)
+
+}
+</script>
+
+</body>
+</html>

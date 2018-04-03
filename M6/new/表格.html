@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+
+<!--tr 一行,td列-->
+
+<table border="1">
+    <tr>
+        <td>主机名</td>
+        <td>IP地址</td>
+        <td>端口</td>
+    </tr>
+    <tr>
+        <td>webSERVER1</td>
+        <td>10.10.0.1</td>
+        <td>80</td>
+    </tr>
+</table>
+
+
+
+
+<!--规范写法带thread tbody以后常用-->
+<table border="1">
+    <thead>
+    <tr>
+        <th>主机名</th>
+        <th>IP地址</th>
+        <th>端口号</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>WebServer01</td>
+        <td>100.10.0.1</td>
+        <td>80</td>
+    </tr>
+        <tr>
+        <td>WebServer02</td>
+        <td>100.10.0.2</td>
+        <td>80</td>
+    </tr>
+
+    </tbody>
+
+</table>
+
+
+<!--合并单元格
+colspan="2" 横跨2列 横向合并
+rowspan="2" 上下占用2列,纵向合并
+-->
+<table border="1">
+    <thead>
+    <tr>
+        <th>主机名</th>
+        <th>IP地址</th>
+        <th>端口号</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td rowspan="2">WebServer01</td>
+        <td>10.10.0.1</td>
+        <td>80</td>
+    </tr>
+        <tr>
+        <td colspan="2">10.10.0.2</td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

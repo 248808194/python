@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--position将内容固定住 类似网页导航栏固定,始终出现最顶端按钮-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pg-header {
+            height:50px;
+            background-color: red;
+            color: black;
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .pg-body {
+            height: 10000px;
+            margin-top: 46px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="pg-header">首页</div>
+<div class="pg-body">内容</div>
+
+
+<div style="height: 40px;width: 40px;position: fixed ;bottom: 0;right: 0 ;background-color: black;color: white">顶部</div>
+
+</body>
+</html>

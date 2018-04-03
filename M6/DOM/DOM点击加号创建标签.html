@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="AddEle1();" value="+">
+<input type="button" onclick="AddEle2();" value="++">
+
+<div id="i1">
+    <p><input type="text" /></p>
+</div>
+
+<script>
+    function AddEle1() {
+//        通过字符串形式去创建标签
+        var tag = "<p><input type='text'/></p>";
+        document.getElementById('i1').insertAdjacentHTML("beforeEnd",tag);
+//      在insertAdjacenHTML 第一个参数可以参入一下四个不同的参数 beforeBegin,  afteBegin,  beforeEnd,  afterEnd
+
+    }
+
+        function AddEle2() {
+//        通过对象方式去创建标签
+//        第二种创建方式,先create一个input标签,在通过setattribute设置属性,完成后通过appendChild 去添加
+        var tag = document.createElement('input');
+        tag.setAttribute('type','text');
+        tag.style.fontSize ='16px';
+        tag.style.color='red';
+
+        var p = document.createElement('p');
+            p.appendChild(tag);
+        document.getElementById("i1").appendChild(p);
+
+    }
+</script>
+</body>
+</html>

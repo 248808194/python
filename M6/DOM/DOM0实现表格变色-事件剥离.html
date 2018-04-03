@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1" width="300px">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+</table>
+
+
+<script>
+    var mytrs = document.getElementsByTagName('tr');
+    var len  = mytrs.length;
+    for (var i=0;i< len;i++){
+        mytrs[i].onmouseover = function () {
+            this.style.backgroundColor = 'red';
+//            this 谁调用此函数,this就指向谁 ,onmouseover 鼠标放在这里
+        };
+
+                mytrs[i].onmouseout = function () {
+            this.style.backgroundColor = '';
+//            this 谁调用此函数,this就指向谁
+        };
+    }
+</script>
+
+
+</body>
+</html>

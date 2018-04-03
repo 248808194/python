@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .hide {display: none}
+
+    .c1 {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 9;
+    }
+
+    .c2 {
+        position: fixed;
+        width: 450px;
+        height: 300px;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+        margin-top: -250px;
+        background-color: lemonchiffon;
+        z-index: 10;
+    }
+
+</style>
+
+<body>
+
+<div>
+
+    <input type="button" value="添加" onclick="showmodel()">
+    <input type="button" value="取消" onclick="cancelall()">
+    <input type="button" value="全选" onclick="chooseall()">
+    <input type="button" value="反选" onclick="reverseall()">
+
+
+    <table  border="1px">
+        <thead>
+        <tr>
+            <th>选择</th>
+            <th>ip地址</th>
+            <th>端口号</th>
+        </tr>
+        </thead>
+-
+        <tbody id="tb1">
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>192.168.1.10</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>192.168.1.10</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>192.168.1.10</td>
+            <td>22</td>
+        </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+    <div id="i1" class="c1 hide"></div>
+    <div id='i2' class="c2 hide">
+        <p><input type="text"></p>
+        <p><input type="text"></p>
+
+        <input type="button" value="确认" onclick="hidemodel()">
+        <input type="button" value="取消" onclick="hidemodel()">
+    </div>
+
+
+</div>
+
+<script>
+    function hidemodel() {
+        document.getElementById('i1').classList.add('hide');
+        document.getElementById('i2').classList.add('hide');
+//隐藏 将hide 属性加入到里面
+    }
+
+    function showmodel() {
+        document.getElementById('i1').classList.remove('hide');
+        document.getElementById('i2').classList.remove('hide');
+//展示 将hide属性移除掉
+    }
+
+
+    function choseall() {
+        var alltrs = document.getElementById('tb1').children;
+        for (var i = 0; i < alltrs.length; i++) {
+            alltrs[i].children[0].children[0].checked = true;
+
+        }
+
+    }
+
+    function cancelall() {
+        var alltrs = document.getElementById('tb1').children;
+        for (var i = 0; i < alltrs.length; i++) {
+            alltrs[i].children[0].children[0].checked = false;
+        }
+
+    }
+
+    function reverseall() {
+        var alltrs = document.getElementById('tb1').children;
+        for (var i = 0; i < alltrs.length; i++) {
+            var checkbox = alltrs[i].children[0].children[0];
+            if  (checkbox.checked) {
+                checkbox.checked = false;
+            }
+            else {
+                checkbox.checked = true
+            }
+        }
+
+    }
+//    choseall cancelall reverseall 通过 查找tb1这个id的子项目，循环的去设置 checked 为true 或者 false
+
+
+</script>
+
+
+</body>
+</html>

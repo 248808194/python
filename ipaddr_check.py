@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# Author: Zhoutao
+#create_date:2018-04-08-13:49
+# Python 3.6
+
 import os
 import sys
 import smtplib
